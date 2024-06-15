@@ -1,0 +1,13 @@
+if(row.Valor <= 0,00)
+{
+            alert "Insira u Valor!" ;
+            row.Valor = null;
+}
+else
+{
+          total = 0.00;
+          for each item in input. Lista_de_dispesa
+          {
+                    total = ifnull(total, 0) + ifnull(item.Valor, 0);
+          }
+input.Total = total;
